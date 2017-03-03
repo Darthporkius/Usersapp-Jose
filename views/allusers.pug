@@ -1,0 +1,11 @@
+//- Displays all the users in the json file
+extends index.pug
+
+block content
+	dir.container
+	h2 All Lads and Lasses
+	p Displays fisrtname, lastname and email.
+	ul
+		each user in parsedUserData
+			li Name: #{user.firstname} | Lastname: #{user.lastname} | e-Mail: #{user.email} 
+	hr

@@ -1,0 +1,10 @@
+extends index.pug
+
+block content
+	hr
+	dir.container
+	h2 Search Results
+	ul
+		each user in results
+			li #{user.name}: #{user.email}
+	

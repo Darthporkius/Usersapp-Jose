@@ -1,0 +1,16 @@
+doctype	html
+html
+	head
+		title = userspage
+	body
+		div.container
+			h1 Welcome to Date4Less
+			hr
+			img(src="https://68.media.tumblr.com/18bbc815e4c641246df8a28c9633d392/tumblr_mtjxfgMy9K1s3figho1_400.gif") 
+			hr
+			form( action="/users/search", method="post")
+				input( type="text", name="search", placeholder="Find a lass or lad")
+				input( type="submit")
+			block content	
+		
+		

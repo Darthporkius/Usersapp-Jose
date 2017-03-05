@@ -38,7 +38,7 @@ app.get( '/allusers', function (req,res) {
 		res.render('allusers', {
 		parsedUserData	
 		})
-	})
+	}).catch (console.log.bind(console))
 })
 
 
